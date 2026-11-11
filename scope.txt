@@ -1,0 +1,6 @@
+# List one authorized target per line (IP or hostname).
+# The agent refuses to run any tool against anything not listed here.
+# Example:
+# 192.168.56.10
+# lab.example.com
+# testphp.vulnweb.com

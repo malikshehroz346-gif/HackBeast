@@ -1,0 +1,16 @@
+services:
+  hackbeast:
+    build: .
+    image: hackbeast:latest
+    container_name: hackbeast
+    ports:
+      - "127.0.0.1:5000:5000"   # change the left side to 0.0.0.0:5000 only if you know you want it reachable off-host
+    environment:
+      - WEB_HOST=0.0.0.0
+    env_file:
+      - .env                     # LLM_LABEL / LLM_PROVIDER / LLM_MODEL / LLM_API_KEY / LLM_BASE_URL / AGENT_NAME
+    volumes:
+      - ./scope.txt:/app/scope.txt
+      - ./outputs:/app/outputs
+      - ./.env:/app/.env
+    restart: unless-stopped
