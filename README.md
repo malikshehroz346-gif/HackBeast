@@ -1,3 +1,4 @@
+
 # HackBeast
 
 An open-source, autonomous AI pentesting agent — recon, fuzz, verify, report,
@@ -312,5 +313,3 @@ persist across container restarts.
 ## License
 
 See `LICENSE`.
-#   a i - p e n t e s t - a g e n t  
- 
